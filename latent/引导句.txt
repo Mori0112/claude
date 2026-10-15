@@ -1,0 +1,1 @@
+每次对话开始，先完整读取这个文件再回应：/home/user/claude/latent/CLAUDE.md

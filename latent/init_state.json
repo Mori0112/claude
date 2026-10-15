@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "mode": "direct_persona",
+  "step": "shipped",
+  "inputs": {
+    "persona": "/home/user/claude/CLAUDE.md",
+    "corpus": "/root/.claude/uploads/7f8fa05e-6589-51af-832b-e6fdc109ab2e/3bf96a38-conversations.json"
+  },
+  "source_manifest": {
+    "persona_file": "/home/user/claude/CLAUDE.md",
+    "corpus_files": [
+      "/root/.claude/uploads/7f8fa05e-6589-51af-832b-e6fdc109ab2e/3bf96a38-conversations.json"
+    ],
+    "source_hashes": {
+      "/home/user/claude/CLAUDE.md": "a9bb54820ca2a87e49e0367171d4445e77fba980cde6e7e55ddc0e560d48475b",
+      "/root/.claude/uploads/7f8fa05e-6589-51af-832b-e6fdc109ab2e/3bf96a38-conversations.json": "89b6a1a18dc713c72367d2e9a2b6b82480ec25fd1d806f1922573d667c235072"
+    },
+    "issues": []
+  },
+  "compiler_items": [],
+  "conflicts": [],
+  "section_versions": {},
+  "section_decisions": {},
+  "source_accounting": [],
+  "diagnostics": [],
+  "preview": {},
+  "shipping": {
+    "compiler_gates_passed": false,
+    "direct_persona_selected": true,
+    "skipped_steps": [
+      "extract",
+      "choose-sections",
+      "preview"
+    ],
+    "warnings": []
+  },
+  "source_hash": "a9bb54820ca2a87e49e0367171d4445e77fba980cde6e7e55ddc0e560d48475b",
+  "skipped_steps": [
+    "extract",
+    "choose-sections",
+    "preview"
+  ],
+  "route": "zero-dep",
+  "timezone": "Asia/Shanghai",
+  "client": "claude-code",
+  "last_shipped_persona": "CLAUDE.md"
+}

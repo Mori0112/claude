@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "latent": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "/home/user/oliscatt/latent-memory/src/mcp_server.py",
+        "--corpus",
+        "/home/user/claude/latent/memory",
+        "--index-dir",
+        "/home/user/claude/latent/memory/index",
+        "--threads",
+        "/home/user/claude/latent/threads.jsonl",
+        "--timezone",
+        "Asia/Shanghai"
+      ]
+    }
+  }
+}
