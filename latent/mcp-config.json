@@ -1,0 +1,19 @@
+{
+  "_说明": "这是给你抄进客户端配置的样板，不会被任何客户端自动读取。改这个文件不生效——要改就改客户端那边真正生效的那份（Claude Code 重跑一次 claude mcp add，或改你项目里的 .mcp.json；其它客户端改你抄进去的那段）。另外：这份配置写死了这台机器的绝对路径，跟着机器走——换机器/换容器要重新跑一次 --step ship 再抄。command 那一行填的是**跑这次初始化的那个解释器的绝对路径**，不是字面的 python——很多机器上根本没有叫 `python` 的命令（只有 `python3`），照抄一个不存在的命令，客户端只会说“连不上”，不会告诉你是哪一行的错。顺带解决第二件事：`local`／`cloud` 两条检索路线要 pip 装东西，装在哪个解释器上，这一行就得指哪个。换机器要连这一行一起改。时区那一行（--timezone）决定“今天是几号”按哪个时区算——写回落进哪个窗口文件、记录标题、检索标签都跟着它。换时区/换机器记得改。",
+  "mcpServers": {
+    "latent": {
+      "command": "/usr/bin/python",
+      "args": [
+        "/home/user/oliscatt/latent-memory/src/mcp_server.py",
+        "--corpus",
+        "/home/user/claude/latent/memory",
+        "--index-dir",
+        "/home/user/claude/latent/memory/index",
+        "--threads",
+        "/home/user/claude/latent/threads.jsonl",
+        "--timezone",
+        "Asia/Shanghai"
+      ]
+    }
+  }
+}
