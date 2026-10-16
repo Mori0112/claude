@@ -3,7 +3,7 @@
     "latent": {
       "command": "/usr/bin/python3",
       "args": [
-        "/home/user/oliscatt/latent-memory/src/mcp_server.py",
+        "/home/user/claude/latent/src/mcp_server.py",
         "--corpus",
         "/home/user/claude/latent/memory",
         "--index-dir",
